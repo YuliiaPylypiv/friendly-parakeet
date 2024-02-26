@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  color: #1165c6;
 }
 
 html,
@@ -72,25 +73,27 @@ header {
   clear: both;
 }
 
-.btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
-  text-align: center;
-  cursor: pointer;
+  .input[type="submit" i] {
+    appearance: auto;
+    user-select: none;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: dodgerblue;
+    color: white;
+    white-space: pre;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
 }
 
-button[disabled] {
+.button {
   cursor: default;
-  background: #c0c7cf;
+  background: #1165c6;
 }
 
 .float-right {
@@ -112,10 +115,11 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed #1d61af;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  color: dodgerblue;
 }
 
 @media (max-width: 690px) {
@@ -123,15 +127,19 @@ button[disabled] {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+    color: #1d61af;
+    
   }
 
   #password {
     font-size: 1rem;
+    color: cornflowerblue;
   }
 }
 
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+    background-color: #1d61af;
   }
 }
